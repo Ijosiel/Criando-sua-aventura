@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca do gênio de Matemática da JAC</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <p> <strong>Em Nova Castilho, há um aluno gênio em Matemática. Vamos descobrir quem é!</strong></p>
+            <p>Na escola do gênio misterioso, cada disciplina possui um professor especialista. Vamos seguir as pistas para encontrá-lo!</p>
+            <button class="btn-proximo" data-proximo="1"> <strong>EE JAC</strong></button>
+            <button class="btn-proximo" data-proximo="2"> <strong>EE Sandra Feitosa</strong></button>
+        </div>
+    
+        <div class="passo" id="passo-1">
+            <p><strong>Parabéns, você está no caminho certo</strong></p>
+            <p> <strong>DICA: </strong>Esse aluno tem entre 15 e 18 anos e nunca reprovou. Qual nível de ensino ele estuda?</p>
+            <button class="btn-proximo" data-proximo="3">Ensino Fundamental</button>
+            <button class="btn-proximo" data-proximo="4">Ensino Médio</button>
+        </div>
+
+        <div class="passo ativo" id="passo-2">
+            <p> <strong>Essa não é a resposta correta</strong></p>
+            <p>O aluno procurado não estuda na EE Sandra, pois na EE Sandra há apenas um professor para Língua Portuguesa, Matemática, Geografia, Ciências e História.</p>
+            <button class="btn-proximo" data-proximo="0"> <strong>Vamos tentar novamente</strong></button>
+        </div>
+
+        <div class="passo" id="passo-3">
+           <p>Não, ele não está no Ensino Fundamental, pois tem entre 15 e 18 anos. </p>
+            <button class="btn-proximo" data-proximo="1">Vamos tentar novamente</button>            
+        </div>
+
+        <div class="passo" id="passo-2">
+            <p>O aluno procurado não estuda na EE Sandra, pois na EE Sandra há apenas um professor para Língua Portuguesa, Matemática, Geografia, Ciências e História.</p>
+            <button class="btn-proximo" data-proximo="0">Vamos tentar novamente!!</button>
+        </div>
+
+               <div class="passo" id="passo-4">
+            <p>Não, ele não está no Ensino Fundamental, pois tem entre 15 e 18 anos</p>
+            <button class="btn-proximo" data-proximo="5">1ª Série EM</button>
+            <button class="btn-proximo" data-proximo="6">2ª Série EM</button>
+            <button class="btn-proximo" data-proximo="7">3ª Série EM</button>
+        </div>
+    
+    
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
